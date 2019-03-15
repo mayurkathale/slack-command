@@ -1,0 +1,14 @@
+{
+    "name": "acommerce/slack-command-deploy",
+    "description": "This app would help you to deploy from slack command",
+    "type": "project",
+    "require": {
+        "alek13/slack": "^1.10"
+    },
+    "authors": [
+        {
+            "name": "Mayur Kathale",
+            "email": "mayur.k@acommerce.asia"
+        }
+    ]
+}
