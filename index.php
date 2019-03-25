@@ -28,7 +28,7 @@ if(count($text) < 4) {
 		$branch = $text[2];
         $curl = curl_init();
 	curl_setopt($curl, CURLOPT_POST, 1);
-        curl_setopt($curl, CURLOPT_URL, 'http://'.getenv("JENKINS_USER").':'.getenv("JENKINS_TOKEN").'@mayurkathale.com:8080/job/'.$values["job_name"].'/buildWithParameters?token='.$values["token"].'&BRANCH='.$text[1]);
+        curl_setopt($curl, CURLOPT_URL, 'http://'.getenv("JENKINS_USER").':'.getenv("JENKINS_TOKEN").'@mayurkathale.com:8080/job/'.$values["job_name"].'/buildWithParameters?token='.$values["token"].'&BRANCH='.$branch);
         $result = curl_exec($curl);
         curl_close($curl);
         $client->send('Deploying command');
